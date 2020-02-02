@@ -19,8 +19,11 @@ typedef struct shop shop;
 int main(){
 
 	int POjoueur = 1000;
-	int joueur =0;
-	int choix =0;
+	int joueur =0 ;
+	int choix = 0;
+	int inventaire = 0;
+	
+
 
 
 		shop carotte = {1,10,1,"carotte"};
@@ -39,36 +42,49 @@ int main(){
 
 		
 
-			printf("Que voulez vous ?\n (1) carotte (2) kiwi (3) poussin (4) slime\n");
-			scanf("%d",&choix);
-		
 
 	while(POjoueur >= 0){	
-		printf("Que voulez vous ?\n (1) carotte (2) kiwi (3) poussin (4) slime\n");
+		printf("Que voulez vous ?\n (1) carotte (2) kiwi (3) poussin (4) slime \n");
 			scanf("%d",&choix);
 
 		switch (choix){
 			case 1 :
-				
-				POjoueur-= 10;
-				printf("Il te reste %d PO \n",POjoueur );
-					break;
+				if (choix ==1){
+					printf("Voici une carotte pour vous ! \n");
+					POjoueur-= 10;
+					printf("Il te reste %d PO \n",POjoueur);
+					
+				}
+			break ;
 			case 2 :
-				POjoueur-= 15;
-				printf("Il te reste %d PO \n",POjoueur );
-					break;
+				if (choix ==2){
+					POjoueur-= 15;
+					printf("Il te reste %d PO \n",POjoueur);
+					
+				}
+			break ;
 			case 3 :
-				POjoueur-= 100;
-				printf("Il te reste %d PO \n",POjoueur );
-					break;
+				if (choix ==3){
+					POjoueur-= 100;
+					printf("Il te reste %d PO \n",POjoueur);
+					
+				}
+			break ;
 			case 4 :
-				POjoueur-= 500;
-				printf("Il te reste %d PO \n",POjoueur );
-					break;
-		}
+				if (choix ==4){
+					POjoueur-= 500;
+					printf("Il te reste %d PO \n",POjoueur);
+					
+
+				}
+			break ;
+					
+
 		if( POjoueur = 0){
-			break;
+			break ;
 		}
+
+
  	}	
 
 
