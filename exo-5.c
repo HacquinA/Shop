@@ -47,7 +47,7 @@ int main(){
 
 
 	while(POjoueur >= 0){	
-			printf("Que voulez vous ?\n (1) carotte (2) kiwi (3) poussin (4) slime  (5) Inventaire\n");
+			printf("Que voulez vous ?\n (1) carotte (2) kiwi (3) poussin (4) slime  (5) Inventaire (6) Mise en Vente\n");
 				scanf("%d",&choix);
 			switch (choix){
 				case 1 :
@@ -103,6 +103,19 @@ int main(){
 						printf("Kiwi:%d\n",nbKiwi);
 						printf("Poussin:%d\n",nbPoussin);
 						printf("Slime:%d\n",nbSlime);
+					}
+				break ;
+				case 6 :
+					if (choix ==6){
+						printf("Veuillier renseigner les caractéristiques de votre objets.\n");
+						printf("Son id:\n");
+							scanf("%d",&id);
+						printf("Son prix:\n");
+							scanf("%d",&prince);
+						printf("Sa catégorie:\n");
+							scanf("%d",&class);
+						printf("Le nom de votre objet:\n");
+							scanf("%c",&name);
 					}
 				break ;
 			
